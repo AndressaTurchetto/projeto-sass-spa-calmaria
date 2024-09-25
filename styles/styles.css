@@ -252,6 +252,48 @@ header #home .img-home img {
   background: #4e75ff;
 }
 
+.cards {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 calc(33.33% - 1rem);
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex: 1 1 100%;
+      margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-espaco {
+      display: none;
+  }
+  .img-desconto {
+      display: none;
+  }
+  .img-spa{
+    display: none;
+  }
+  #desconto {
+    display: none;
+  }
+}
+
 footer {
   background: #E8F5C8;
   padding: 2rem;
